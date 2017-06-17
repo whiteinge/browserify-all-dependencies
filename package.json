@@ -1,0 +1,40 @@
+{
+  "name": "browserify-all-dependencies",
+  "author": "Seth House <seth@eseth.com> (http://eseth.org)",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "description": "Run browserify --standalone for every lib in a package.json dependencies object",
+  "private": false,
+  "keywords": [
+    "browserify",
+    "sandbox",
+    "testing",
+    "experiment",
+    "experimentation",
+    "local development"
+  ],
+  "bin": {
+    "badeps": "./index.js"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiteinge/browserify-all-dependencies.git"
+  },
+  "homepage": "https://github.com/whiteinge/browserify-all-dependencies",
+  "dependencies": {
+    "browserify": "14.4.0"
+  },
+  "optionalDependencies": {},
+  "devDependencies": {},
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "rules": {}
+  },
+  "scripts": {},
+  "bugs": {
+    "url": "https://github.com/whiteinge/browserify-all-dependencies/issues"
+  }
+}
