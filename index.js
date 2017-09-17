@@ -14,19 +14,5 @@ Object.keys(package_json.dependencies).forEach(function(key) {
     var b = browserify({require: key, standalone: alias});
     b.bundle().pipe(outFile);
 
-    console.log('Done processing', key);
-    outFile.on('finish', () => console.log('really finished'));
+    outFile.on('finish', () => console.log('Finished processing', key));
 });
-
-var scriptTags = Object.keys(package_json.dependencies).map(function(key) {
-    return `<script src="${key}.js"></script>`;
-});
-
-var indexContent = `
-<html>
-${scriptTags.join('\n')}
-</html>
-`;
-
-fs.writeFile(`${process.cwd()}/dist/index.html`, indexContent,
-    err => console.log('Done.'));
