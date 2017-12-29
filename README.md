@@ -1,3 +1,5 @@
+**Archiving:** easier & more flexible to just browserify a file containing `window.MyLib = require('mylib')` lines.
+
 # browserify-all-dependencies
 
 Run `browserify --standalone` for every lib in a `package.json` `dependencies`
